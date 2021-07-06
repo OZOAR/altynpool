@@ -261,9 +261,13 @@
         line-height: 28px !important;
         padding-bottom: 30px !important;
     }
-    .contact-us img {
+    .contact-us .img_circle {
         display: none !important;
     }
+    .contact-us .img_full {
+        display: none !important;
+    }
+
     .contact-us select {
         border-bottom: 1px solid #fff !important;
         font-size: 14px !important;
@@ -287,19 +291,25 @@
         line-height: 15px !important;
         font-family: Gilroy-Bold !important;
         margin-top: 50px !important;
+        z-index: 999 !important;
     }
     footer {
         padding: 2% 3% 0% 3% !important;
     }
-    footer img {
+    footer .footer_circle_img {
         width: 9% !important;
+        
     }
     footer .footer-menu {
         padding-bottom: 110px !important;
     }
+    footer {
+        z-index: 999 !important;
+    }
     footer a {
         margin-right: 0 !important;
-        font-size: 16px !important
+        font-size: 16px !important;
+        /* z-index: 999 !important; */
     }
     footer .row {
         margin-top: 20px !important;
@@ -310,6 +320,13 @@
     footer .second-footer-nav {
         /* float: right !important; */
         margin-left: 110px;
+    }
+    .mobile_img_footer {
+        display: block !important;
+        z-index: 1 !important; 
+        right:0; 
+        top: 2850; 
+        position: absolute;
     }
     .middle-line  {
         padding-top: 7px !important;

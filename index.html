@@ -46,7 +46,7 @@
               <a class="nav-link" href="#about-us">About Us</a>
               <a class="nav-link" href="#our-services">Our services</a>
               <a class="nav-link" href="#why-us">Why Us</a>
-              <a class="nav-link" href="#main">Our Pool</a>
+              <a class="nav-link" href="#main">Pool</a>
               <a class="nav-link" href="#contact-us">Contacts</a>
               <div class="dropdown">
                 <button onclick="dropdownOnClick()" id="lang-btn" class="language-btn">English <img id="lang-carret" src="img/caret-down.svg" width="11px" style="padding-bottom: 4px; margin-left: 4px;" alt=""></button>
@@ -77,7 +77,7 @@
           </div>
         </div>
         <a onclick="closeNav()" class="mobile-nav-link" href="#about-us">About Us</a>
-        <a onclick="closeNav()" class="mobile-nav-link" href="#our-services">What We Do</a>
+        <a onclick="closeNav()" class="mobile-nav-link" href="#our-services">Our services</a>
         <a onclick="closeNav()" class="mobile-nav-link" href="#why-us">Why Us</a>
         <a onclick="closeNav()" class="mobile-nav-link" href="#main">Pool</a>
         <a onclick="closeNav()" class="mobile-nav-link" href="#contact-us">Contacts</a>
@@ -284,52 +284,58 @@
             want to mine with us?
           </h2>
           <div class="col-lg-6 col-md-6 col-sm-12 input-holder">
-            
+            <form action="">
+              	<!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Miningsoftware.solutions">
+                <input type="hidden" name="admin_email" value="info@interhash.by">
+                <input type="hidden" name="form_subject" value="Request for private firmware">
+                <!-- END Hidden Required Fields -->
             <div class="input-inner">
               <label id="contact-label" for="">Email *</label>
-              <input type="email" required>
+              <input type="email" name="email" required>
             </div>
             <div class="input-inner">
               <label for="">Full name *</label>
-              <input type="name" required>
+              <input type="text" name="name" required>
             </div>
             <div class="input-inner">
               <label for="">Company name</label>
-              <input type="text" required>
+              <input type="text" name="company_name" required>
             </div>
             <div class="row input-double-inner">
               <div class="col-lg-6 col-md-6 col-sm-12 select-block">
                 <select name="location" id="">
                   <option selected>LOCATION</option>
-                  <option value="1">Asia</option>
-                  <option value="2">Europe</option>
-                  <option value="3">Africa</option>
-                  <option value="4">North America</option>
-                  <option value="5">South America</option>
-                  <option value="6">Australia and Oceania</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Africa">Africa</option>
+                  <option value="North America">North America</option>
+                  <option value="South America">South America</option>
+                  <option value="Australia and Oceania">Australia and Oceania</option>
                 </select>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 select-block">
                 <select name="interest" id="">
                   <option selected>INTEREST</option>
-                  <option value="1">Cryptocurrency mining</option>
-                  <option value="2">Crypto exchange</option>
-                  <option value="3">Equipment placement</option>
-                  <option value="4">Firmware manufacturing</option>
-                  <option value="5">Мining investments</option>
-                  <option value="6">Мining pool</option>
+                  <option value="Cryptocurrency mining">Cryptocurrency mining</option>
+                  <option value="Crypto exchange">Crypto exchange</option>
+                  <option value="Equipment placement">Equipment placement</option>
+                  <option value="Firmware manufacturing">Firmware manufacturing</option>
+                  <option value="Мining investments">Мining investments</option>
+                  <option value="Мining pool">Мining pool</option>
                 </select>
               </div>
             </div>
             <div class="input-inner-message">
               <label for="">Message</label>
-              <input type="text">
+              <input type="text" name="email">
             </div>
-            <button class="yellow-button">send</button>
+            <button type="submit" value="submit" class="yellow-button">send</button>
+          </form>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="img/circle.svg" width="200px" style="z-index:5; right: 100; top: 3050; position: absolute;" alt="">
-            <img src="img/object_contact.png" width="610px" style="z-index: 4; right:0; top: 2950; position: absolute;"  alt="">
+            <img src="img/circle.svg" class="img_circle" width="200px" style="z-index:5; right: 100; top: 3050; position: absolute;" alt="">
+            <img src="img/object_contact.png" class="img_full" width="610px" style="z-index: 4; right:0; top: 2950; position: absolute;"  alt="">
           </div>
         </div>
       </div>
@@ -338,14 +344,16 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12">
-            <img src="img/circle.svg" width="4%" style="padding-bottom: 14px;" alt="">
+            <img src="img/circle.svg" class="footer_circle_img" width="4%" style="padding-bottom: 14px;" alt="">
             <p>Altyn pool official<br>Copyright, 2021</p>
+            <img src="img/object_mobile_top.png" class="mobile_img_footer" width="270px"  alt="">
+
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12 footer-menu">
             <div class="row"  style="margin-top: 50px">
               <div class="col-lg-6 col-md-6 col-sm-6">
                 <a href="#about-us">About us</a>
-                <a href="#our-services">What We Do</a>
+                <a href="#our-services">Our services</a>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 second-footer-nav">
                 <a href="#why-us">Why Us</a>

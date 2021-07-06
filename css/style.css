@@ -416,6 +416,7 @@ header .slidenav-menu {
     margin-top: 40%;
 }
 .yellow-button {
+    position: relative;
     background-color: #FFEC00;
     border: 1px solid #FFEC00;
     color: #111;
@@ -642,6 +643,7 @@ select:-moz-focusring {
     padding-top: 15%;
 }
 .contact-us .yellow-button {
+    position: relative;
     background-color: #FFEC00;
     border: 1px solid #FFEC00;
     color: #111;
@@ -654,6 +656,7 @@ select:-moz-focusring {
     text-transform: uppercase;
     text-shadow: none !important;
     margin-top: 5%;
+    z-index: 999;
 }
 .contact-us .yellow-button:hover { 
     background-color: #FFF57B;
@@ -672,6 +675,8 @@ footer p {
     font-size: 14px;
     color: #fff;
     line-height: 19px;
+    position: relative;
+    z-index: 999 !important;
 }
 footer a {
     font-family: Gilroy-Regular;
@@ -681,6 +686,11 @@ footer a {
     display: table;
     /* padding-top: 10px; */
     padding-bottom: 12px;
+    position: relative;
+    z-index: 999 !important;
+}
+.foote_mobile_img {
+    display: none;
 }
 .w-75 {
     width: 75%;
