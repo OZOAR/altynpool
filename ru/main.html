@@ -59,7 +59,7 @@
       </div>
       <div class="slidenav-menu">
         <div class="dropdown-m">
-          <button onclick="dropdownOnClick()" id="lang-btn-m" class="language-btn-m">English  <img id="lang-carret-m" src="../img/caret-down-black.svg" width="11px" style="padding-bottom: 4px; margin-left: 4px;" alt=""></button>
+          <button onclick="dropdownOnClick_mobile()" id="lang-btn-m" class="language-btn-m">English  <img id="lang-carret-m" src="../img/caret-down-black.svg" width="11px" style="padding-bottom: 4px; margin-left: 4px;" alt=""></button>
           <div id="myDropdown-m" class="dropdown-content-m">
             <a href="../index.html">English</a>
             <a href="main.html">Русский</a>
@@ -402,7 +402,7 @@ var currentTab = (function () {
   }
 </script>
 <script>
-  function dropdownOnClick() {
+  function dropdownOnClick_mobile() {
     document.getElementById("myDropdown-m").classList.toggle("show");
     document.getElementById("lang-btn-m").classList.toggle("lang-btn-borders");
     document.getElementById("lang-carret-m").classList.toggle("rotateimg180");
