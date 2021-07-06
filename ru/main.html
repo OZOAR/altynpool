@@ -61,6 +61,13 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       </div>
       <div class="slidenav-menu">
+        <div class="dropdown-m">
+          <button onclick="dropdownOnClick()" id="lang-btn-m" class="language-btn-m">English  <img id="lang-carret-m" src="img/caret-down-black.svg" width="11px" style="padding-bottom: 4px; margin-left: 4px;" alt=""></button>
+          <div id="myDropdown-m" class="dropdown-content-m">
+            <a href="index.html">English</a>
+            <a href="ru/main.html">Русский</a>
+          </div>
+        </div>
         <a onclick="closeNav()" href="#about-us">О нас</a>
         <a onclick="closeNav()" href="#our-services">Сервисы</a>
         <a onclick="closeNav()" href="#why-us">Почему мы</a>
@@ -255,7 +262,7 @@
               <input type="name" required>
             </div>
             <div class="input-inner">
-              <label for="">Имя компани</label>
+              <label for="">Название компании</label>
               <input type="text" required>
             </div>
             <div class="row input-double-inner">
@@ -272,13 +279,13 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 select-block">
                 <select name="interest" id="">
-                  <option selected>ИНТЕРЕС(Ы)</option>
-                  <option value="1">Майнинг криптовалют</option>
+                  <option selected>ИНТЕРЕС</option>
+                  <option value="5">Инвестиции в майнинг</option>
                   <option value="2">Криптовалютная биржа</option>
+                  <option value="1">Майнинг криптовалют</option>
+                  <option value="6">Майнинг пул</option>
                   <option value="3">Размещение оборудования</option>
                   <option value="4">Разработка ПО</option>
-                  <option value="5">Инвестиции в майнинг</option>
-                  <option value="6">Майнинг пул</option>
                 </select>
               </div>
             </div>
@@ -391,6 +398,30 @@ var currentTab = (function () {
           openDropdown.classList.remove('show');
           document.getElementById("lang-btn").classList.remove("lang-btn-borders")
           document.getElementById("lang-carret").classList.remove("rotateimg180");
+        }
+      }
+    }
+  }
+</script>
+<script>
+  function dropdownOnClick() {
+    document.getElementById("myDropdown-m").classList.toggle("show");
+    document.getElementById("lang-btn-m").classList.toggle("lang-btn-borders");
+    document.getElementById("lang-carret-m").classList.toggle("rotateimg180");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.language-btn-m')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content-m");
+      var i;
+      var langbtn = document.getElementsByClassName("language-btn-m");
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          document.getElementById("lang-btn-m").classList.remove("lang-btn-borders")
+          document.getElementById("lang-carret-m").classList.remove("rotateimg180");
         }
       }
     }
