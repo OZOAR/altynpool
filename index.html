@@ -61,11 +61,18 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       </div>
       <div class="slidenav-menu">
-        <a href="#about-us">About Us</a>
-        <a href="#our-services">What We Do</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#main">Pool</a>
-        <a href="#contact-us">Contacts</a>
+        <div class="dropdown-m">
+          <button onclick="dropdownOnClick()" id="lang-btn-m" class="language-btn-m">English</button>
+          <div id="myDropdown-m" class="dropdown-content-m">
+            <a href="index.html">English</a>
+            <a href="ru/main.html">Русский</a>
+          </div>
+        </div>
+        <a class="mobile-nav-link" href="#about-us">About Us</a>
+        <a class="mobile-nav-link" href="#our-services">What We Do</a>
+        <a class="mobile-nav-link" href="#why-us">Why Us</a>
+        <a class="mobile-nav-link" href="#main">Pool</a>
+        <a class="mobile-nav-link" href="#contact-us">Contacts</a>
       </div>
       <div class="mobile-header-footer"></div>
       </div>
@@ -415,6 +422,30 @@ var currentTab = (function () {
           openDropdown.classList.remove('show');
           document.getElementById("lang-btn").classList.remove("lang-btn-borders")
           document.getElementById("lang-carret").classList.remove("rotateimg180");
+        }
+      }
+    }
+  }
+</script>
+<script>
+  function dropdownOnClick() {
+    document.getElementById("myDropdown-m").classList.toggle("show");
+    document.getElementById("lang-btn-m").classList.toggle("lang-btn-borders");
+    document.getElementById("lang-carret-m").classList.toggle("rotateimg180");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.language-btn-m')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content-m");
+      var i;
+      var langbtn = document.getElementsByClassName("language-btn-m");
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          document.getElementById("lang-btn-m").classList.remove("lang-btn-borders")
+          document.getElementById("lang-carret-m").classList.remove("rotateimg180");
         }
       }
     }

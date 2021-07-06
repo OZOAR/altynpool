@@ -11,6 +11,70 @@
     }
 }
 @media (min-width: 350px) and (max-width:600px){
+    .language-btn-m {
+        font-family: Gilroy-Medium;
+        font-size: 16px;
+        background-color: rgba(255, 255, 255, 0.55);
+        border: none;
+        border-radius: 20px;
+        margin-top: 2px;
+        color: #111;
+        display: inline-block !important;
+        float: right;
+        margin-right: 50px;
+        width: 120px;
+        height: 38px;
+        /* padding-left: 10px !important; */
+        text-align: center;
+    }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .language-btn-m {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content-m {
+        display: none;
+        position: absolute;
+        width: 120px !important;
+        padding-bottom: 10px;
+        right: 50px;
+        top: 170px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.55);
+        z-index: 1;
+      }
+
+      .dropdown-content-m a {
+        font-family: Gilroy-Medium;
+        font-size: 16px;
+        color: #111;
+        text-align: left;
+        padding-left: 28px;
+        padding-top: 6px;
+        text-decoration: none;
+        display: block;
+      }
+    .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+    }
+    
+    .dropdown-menu-m a {
+        text-decoration: none;
+        font-family: Gilroy-Regular;
+        font-size: 16px;
+        color: #ffffff;
+    }
+   
     .navbar {
         display: none !important;
     }
@@ -46,7 +110,7 @@
       }
     
     header span {
-        padding-top: 12px;
+        padding-top: 9px;
         float: right;
         color: #fff;
         margin-right: 15px;
@@ -76,7 +140,7 @@
         margin-left: 20px;
     }
     
-    .sidenav a {
+    .sidenav .mobile-nav-link {
         padding: 8px 0px 40px 22px;
         text-decoration: none;
         font-size: 16px;
@@ -84,10 +148,10 @@
         color: #111;
         font-family: Gilroy-Medium;
         display: block;
-        transition: 0.7s;
+        
       }
       
-    .sidenav a:hover {
+    .sidenav .mobile-nav-link:hover {
         color: #111;
       }
       
@@ -95,6 +159,16 @@
         position: absolute;
         /* float: right; */
         top: 50;
+        padding: 8px 0px 40px 22px;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 19px;
+        color: #111;
+        font-family: Gilroy-Medium;
+        display: block;
+        font-family: Gilroy-Regular;
+        color: #111;
+        transition: 0.7s;
         right: 20;
         font-size: 55px;
         margin-left: 60px;
