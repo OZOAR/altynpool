@@ -387,6 +387,14 @@ header .slidenav-menu {
     height: 720px;
     z-index: 1;
 }
+.main-block .main-img-mobile {
+    display: none;
+    width: 220px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
 .main-block svg{
     position: absolute;
     /* height: 913.52px; */
@@ -395,6 +403,7 @@ header .slidenav-menu {
 }
 .main-block .text-block {
     padding-left: 2%;
+    z-index: 3;
 }
 .main-block .text-block h1 {
     font-family: Gilroy-Medium;

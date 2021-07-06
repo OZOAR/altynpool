@@ -108,7 +108,10 @@
         background-color: #b9f8fc;
     }
     .main-block {
-        height: 550px !important;
+        height: 500px !important;
+    }
+    .main-block .main-img-mobile {
+        display: block !important;
     }
     .main-block .text-block {
         padding-left: 30px !important;
