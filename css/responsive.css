@@ -14,36 +14,33 @@
     .language-btn-m {
         font-family: Gilroy-Medium;
         font-size: 16px;
-        background-color: rgba(255, 255, 255, 0.55);
+        background-color: rgba(54, 54, 54, 0.2);
         border: none;
         border-radius: 20px;
         margin-top: 2px;
         color: #111;
         display: inline-block !important;
         float: right;
-        margin-right: 50px;
-        width: 120px;
+        margin-right: 20px;
+        width: 112px;
         height: 38px;
+        padding-left: 22px;
         /* padding-left: 10px !important; */
-        text-align: center;
+        text-align: left;
     }
       
       /* The container <div> - needed to position the dropdown content */
-      .language-btn-m {
-        position: relative;
-        display: inline-block;
-      }
-      
+
       .dropdown-content-m {
         display: none;
         position: absolute;
-        width: 120px !important;
+        width: 112px !important;
         padding-bottom: 10px;
-        right: 50px;
+        right: 20px;
         top: 170px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.55);
+        background-color: rgba(54, 54, 54, 0.2);
         z-index: 1;
       }
 
@@ -52,7 +49,7 @@
         font-size: 16px;
         color: #111;
         text-align: left;
-        padding-left: 28px;
+        padding-left: 22px;
         padding-top: 6px;
         text-decoration: none;
         display: block;
@@ -134,7 +131,7 @@
     .slidenav-menu {
         padding-top: 80px;
     }
-    .sidenav img {
+    .sidenav .mobile-header-logo {
         float: left;
         margin-top: 40px;
         margin-left: 20px;
