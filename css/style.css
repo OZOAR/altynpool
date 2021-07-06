@@ -264,6 +264,7 @@ body {
     font-size: 16px;
     width: 120px;
     text-align: center;
+    cursor: pointer;
 }
 
 .navbar-nav a:hover,
@@ -375,6 +376,12 @@ body {
 header .mobile-nav {
     display: none;
 } 
+header .slidenav-menu {
+    display: none;
+}
+.slidenav-head {
+    display: none;
+}
 .main-block {
     background-color: #111;
     height: 720px;

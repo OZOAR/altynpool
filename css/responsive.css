@@ -6,13 +6,19 @@
     header .mobile-nav {
         display: inline-block;
     }
+    .slidenav-menu {
+        display: block !important;
+    }
 }
 @media (min-width: 350px) and (max-width:600px){
     .navbar {
         display: none !important;
     }
-    header {
-        
+    .slidenav-menu {
+        display: block !important;
+    }
+    .slidenav-head {
+        display: block !important;
     }
     header .mobile-nav {
         display: inline-block !important;
@@ -28,7 +34,7 @@
         font-family: Gilroy-Medium !important;
         color: #fff;
         float: left;
-        font-size: 1.8em;
+        font-size: 1.6em;
         padding-top: 10px;
         /* display: inline-block; */
         padding-left: 20px;
