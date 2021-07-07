@@ -260,6 +260,7 @@ body {
     text-align: left;
     cursor: pointer;
     margin-right: 50px;
+	white-space: nowrap !important;
 }
 
 .navbar-nav a:hover,
@@ -364,10 +365,7 @@ body {
 .navbar-brand:hover {
 	color: white;
 }
-.nav-link {
-	font-size: 1.15em;
-	width: 100%;
-}
+
 header .mobile-nav {
     display: none;
 } 
@@ -491,27 +489,23 @@ header .slidenav-menu {
     font-size: 24px;
     line-height: 28px;
     padding-top: 26px;
-    /* float: right; */
+}
+.why-us .card-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .why-us .card-head p{
     font-family: Gilroy-Bold;
     -webkit-appearance: none;
     font-size: 16px;
     line-height: 28px;
+    white-space: nowrap;
+    width: auto;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    /* float: left; */
-    /* width: 20%; */
-    
-    display: inline-block;
 }
-.middle-line {
-    float: right;
-    border-bottom: 2px solid #111;
-    /* width: 60%; */
-    display: flex;
-    padding-top: 15px;
-}
+
 .why-us .row {
     padding-bottom: 5%;
 }
@@ -536,20 +530,36 @@ header .slidenav-menu {
     font-size: 24px;
     line-height: 28px;
     padding-top: 26px;
-    /* float: right; */
+    text-align: left;
 }
+
 .our-services .card-head p{
     font-family: Gilroy-Bold;
     -webkit-appearance: none;
     font-size: 16px;
     line-height: 28px;
     text-transform: uppercase;
-    /* float: left; */
-    /* width: 20%; */
-    
-    display: inline-block;
+    white-space: nowrap;
+    width: auto;
+    letter-spacing: 0.08em;
+    /* padding-right: 35px; */
 }
 
+.our-services .card-head {
+    /* padding-right: 35px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.middle-line {
+    border-bottom: 2px solid #111;
+    width: 100%;
+    margin-left: 35px;
+    height: 1px;
+    display: inline;
+    padding-top: 15px;
+}
 .our-services .row {
     padding-bottom: 5%;
 }
@@ -743,21 +753,6 @@ footer a:hover {
 }
 .mobile_img_footer {
     display: none;
-}
-.w-75 {
-    width: 75%;
-}
-.w-80 {
-    width: 80%;
-}
-.w-70 {
-    width: 70%;
-}
-.w-65 {
-    width: 65%;
-}
-.w-60 {
-    width: 60%;
 }
 textarea:focus, select:focus,
 input[type="text"]:focus,

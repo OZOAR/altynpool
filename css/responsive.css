@@ -331,20 +331,5 @@
     .middle-line  {
         padding-top: 7px !important;
         border-bottom: 1px solid #111 !important;
-    }
-    .w-75 {
-        width: 100% !important;
-    }
-    .w-80 {
-        width: 100% !important;
-    }
-    .w-70 {
-        width: 100% !important;
-    }
-    .w-65 {
-        width: 100% !important;
-    }
-    .w-60 {
-        width: 100% !important;
-    }    
+    }  
 }
