@@ -677,6 +677,7 @@ header .slidenav-menu {
     text-transform: uppercase;
     color: #fff;
     width: 100%;
+    border-radius: 0 !important;
     background-color: #111;
     border-bottom: 2px solid #fff;
     border-top: 0;
