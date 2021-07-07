@@ -254,24 +254,17 @@ body {
     margin-right: 3%;
 }
 .navbar-nav .nav-link {
-	background: 
-	linear-gradient(to right, #111, #111),
-	linear-gradient(to right, #FFEC00, #FFF57B);
-	background-size: 100% 0.2em, 0 0.1em;
-	background-position: 100% 100%, 0 100%;
-	background-repeat: no-repeat;
-	transition: background-size 400ms;
     font-family: Gilroy-Regular;
     font-size: 16px;
-    width: 120px;
-    text-align: center;
+    width: auto;
+    text-align: left;
     cursor: pointer;
+    margin-right: 50px;
 }
 
 .navbar-nav a:hover,
 .navbar-nav a:focus {
-	background-size: 0 0.1em, 100% 0.1em;
-	color: #ffffff;
+	color: #FFEC00;
 }
 .navbar .language-btn {
     font-family: Gilroy-Regular;
@@ -421,14 +414,13 @@ header .slidenav-menu {
     border: 1px solid #FFEC00;
     color: #111;
     font-size: 16px;
-    font-family: Gilroy-Black !important;
+    font-family: Gilroy-SemiBold !important;
     letter-spacing: 0.08em;
-    width: 47%;
-    height: 66px;
+    width: 284px;
+    height: 70px;
     border-radius: 500px;
     margin-top: 10%;
     text-transform: uppercase;
-    text-shadow: 3px 4px 4px rgba(150, 150, 150, 1);
 }
 .yellow-button:hover {
     background-color: #FFF57B;
@@ -461,8 +453,8 @@ header .slidenav-menu {
     font-size: 16px;
     font-family: Gilroy-Bold;
     letter-spacing: 0.08em;    
-    width: 38%;
-    height: 66px;
+    width: 284px;
+    height: 70px;
     border-radius: 500px;
     margin-top: 38px;
     text-transform: uppercase;
@@ -503,6 +495,7 @@ header .slidenav-menu {
 }
 .why-us .card-head p{
     font-family: Gilroy-Bold;
+    -webkit-appearance: none;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.08em;
@@ -547,6 +540,7 @@ header .slidenav-menu {
 }
 .our-services .card-head p{
     font-family: Gilroy-Bold;
+    -webkit-appearance: none;
     font-size: 16px;
     line-height: 28px;
     text-transform: uppercase;
@@ -559,7 +553,6 @@ header .slidenav-menu {
 .our-services .row {
     padding-bottom: 5%;
 }
-.contact-us {}
 
 .contact-us {
     background-color: #111;
@@ -593,26 +586,82 @@ header .slidenav-menu {
     height: 30px;
     border-left: 0;
     border-right: 0;
-    padding-bottom: 5px;
-    padding-left: 7px;
-    margin-bottom: 40px;
+    /* padding-bottom: 5px; */
+    /* padding-left: 7px; */
+    margin-bottom: 20px;
+}
+.contact-us textarea {
+    background-color: #111;
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    width: 100%;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    border-top: 0;
+    height: 45px;
+    border-left: 0;
+    border-right: 0;
 }
 
+.contact-us textarea:focus {
+    background-color: #111 !important;
+    font-family: Gilroy-Medium !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    color: #fff !important;
+    border-bottom: 2px solid #fff !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
 .contact-us .input-inner-message input::placeholder {
     font-family: Gilroy-Regular;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff;
 }
-.contact-us label {
+.contact-us input::placeholder, textarea::placeholder {
     font-family: Gilroy-Regular;
     font-size: 16px;
-    padding-left: 7px;
+    /* padding-left: 7px; */
     letter-spacing: 0.08em;
     color: #fff;
     text-transform: uppercase;
 }
+.contact-us .form-control {
+    color: #fff !important;
+    border-radius: 0 !important;
+    padding-left: 2px  !important;
+}
+.contact-us .form-control:focus {
+    border-radius: 0 !important;
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+.contact-us .form-floating>.form-control, .form-floating>.form-select {
+    /* height: calc(3.2rem + 2px) !important; */
+    height: 55px;
+}
+/* .contact-us .form-floating>textarea.form-control, .form-floating>textarea.form-select {
+    height: calc(3.5rem + 2px) !important;
+} */
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    opacity: 1 !important;
+}
+/* .form-floating>textarea.form-control:focus~label, .form-floating>textarea.form-control:not(:placeholder-shown)~label, .form-floating>textarea.form-select~label {
+    opacity: 0 !important;
+} */
+.contact-us label {
+    font-family: Gilroy-Regular;
+    font-size: 14px;
+    padding-left: 0px !important;
+    padding-bottom: 5px;
+    letter-spacing: 0.08em;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
 .contact-us select {
+    -webkit-appearance: none;
     font-family: Gilroy-Regular;
     font-size: 16px;
     text-transform: uppercase;
@@ -624,7 +673,7 @@ header .slidenav-menu {
     border-left: 0;
     border-right: 0;
     padding-bottom: 15px;
-    padding-left: 7px;
+    padding-left: 2px;
     margin-bottom: 40px;
 
 }
@@ -640,8 +689,8 @@ select:-moz-focusring {
     color: #fff;
 }
 .contact-us .input-inner-message input {
-    height: 120px;
-    padding-top: 15%;
+    /* height: 120px; */
+    /* padding-top: 15%; */
 }
 .contact-us .yellow-button {
     position: relative;
@@ -651,11 +700,10 @@ select:-moz-focusring {
     font-size: 16px;
     font-family: Gilroy-SemiBold !important;
     letter-spacing: 0.08em;
-    width: 55%;
-    height: 66px;
+    width: 351px;
+    height: 60px;
     border-radius: 500px;
     text-transform: uppercase;
-    text-shadow: none !important;
     margin-top: 5%;
     z-index: 999;
 }
@@ -690,7 +738,10 @@ footer a {
     position: relative;
     z-index: 999 !important;
 }
-.foote_mobile_img {
+footer a:hover {
+    color: #FFEC00;
+}
+.mobile_img_footer {
     display: none;
 }
 .w-75 {
