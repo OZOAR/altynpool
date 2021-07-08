@@ -412,10 +412,11 @@ header .slidenav-menu {
 }
 .main-block .text-block h1 {
     font-family: Gilroy-Medium;
-    font-size: 62px;
+    font-size: 60px;
     line-height: 73px;
     color: #fff;
-    display: block;
+    /* display: inline-block; */
+    white-space: nowrap;
     margin-top: 30%;
 }
 .yellow-button {
