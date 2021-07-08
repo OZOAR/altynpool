@@ -589,8 +589,19 @@ header .slidenav-menu {
     line-height: 73px;
     color: #fff;
 }
+.contact-us p {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    line-height: 24px;
+    /* letter-spacing: 0.08em; */
+    color: #fff;
+    letter-spacing: 0.08em;
+    width: 100%;
+    padding-bottom: 40px;
+
+}
 .contact-us .input-holder {
-    padding-top: 5%;
+    padding-top: 1%;
 }
 .contact-us input {
     font-family: Gilroy-Medium;
