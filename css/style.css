@@ -330,7 +330,9 @@ body {
 .navbar .language-btn:hover {
     color: #FFF57B;
 }
-
+.navbar-collapse {
+    margin-left: 10%;
+}
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
@@ -482,8 +484,11 @@ header .slidenav-menu {
 .why-us h2 {
     font-size: 62px;
     line-height: 73px;
-    font-family: Gilroy-Medium !important;
+    font-family: Gilroy-Medium ;
     padding-bottom: 6%;
+}
+.why-us h2>b {
+    font-family: Gilroy-Bold !important;
 }
 
 .why-us .text-card {
@@ -680,7 +685,7 @@ header .slidenav-menu {
 } */
 .contact-us label {
     font-family: Gilroy-Regular;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 0px !important;
     padding-bottom: 5px;
     letter-spacing: 0.08em;
