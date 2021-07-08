@@ -310,10 +310,13 @@ body {
     font-size: 16px;
     color: #fff;
     text-align: left;
-    padding-left: 28px;
+    padding-left: 26px;
     padding-top: 6px;
     text-decoration: none;
     display: block;
+  }
+  .dropdown-content .dropdown_rus {
+    padding-left: 20px !important;
   }
   .rotateimg180 {
     -webkit-transform:rotate(180deg);
@@ -412,8 +415,8 @@ header .slidenav-menu {
     font-size: 62px;
     line-height: 73px;
     color: #fff;
-    display: table-caption;
-    margin-top: 40%;
+    display: block;
+    margin-top: 30%;
 }
 .yellow-button {
     position: relative;
