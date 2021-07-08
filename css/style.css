@@ -270,7 +270,7 @@ body {
 .navbar .language-btn {
     font-family: Gilroy-Regular;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: #313131;
 	border: none;
     border-radius: 20px;
 	margin-top: 2px;
@@ -295,7 +295,7 @@ body {
     /* height: 38px !important; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: #313131;
     /* min-width: 160px; */
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     z-index: 1;
@@ -354,7 +354,7 @@ body {
     color: #FFEC00;	
 }
 .navbar {
-	background-color: #111 !important;
+	background-color: rgb(17, 17, 17) !important;
 	
 }
 .navbar-brand {
@@ -388,11 +388,18 @@ header .slidenav-menu {
     right: 0;
     top: 110px;
 }
-.main-block svg{
+.main-block .main_img{
     position: absolute;
+    width: 890px;
+    z-index: 2;
     /* height: 913.52px; */
-    right: 818px;
-    top: 97.03px;
+    right: 40%;
+    top: -250px;
+    -webkit-transform:rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
 }
 .main-block .text-block {
     padding-left: 2%;

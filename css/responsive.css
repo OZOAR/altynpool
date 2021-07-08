@@ -340,7 +340,7 @@
         line-height: 15px !important;
         font-family: Gilroy-Bold !important;
     }
-    .main-block svg{
+    .main-block .main_img{
         display:  none !important;
         /* position: absolute; */
         /* width: 80% !important; */
