@@ -516,6 +516,11 @@ width: 100%;
     font-family: Gilroy-Bold !important;
 }
 
+.why-us a {
+    text-decoration: underline !important;
+    color: #409ba0;
+}
+
 .why-us .text-card {
     width: 100%;
     background-color: #fff;
