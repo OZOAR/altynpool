@@ -795,10 +795,20 @@ select:-moz-focusring {
 }
 footer {
     background: #111;
-    padding: 1% 5% 2% 5%;
+    padding: 1% 1% 2% 6%;
     max-width: 1650px;
 width: 100%;
     margin: 0 auto;
+}
+footer .menu-header {
+    text-transform: uppercase;
+    font-family: Gilroy-SemiBold;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    color: #FFEC00;
+}
+footer .column-two {
+    padding-top: 22px;
 }
 footer p {
     font-family: Gilroy-Regular;
@@ -810,17 +820,29 @@ footer p {
 }
 footer a {
     font-family: Gilroy-Regular;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     line-height: 19px;
     display: table;
     /* padding-top: 10px; */
-    padding-bottom: 12px;
+    padding-bottom: 8px;
     position: relative;
     z-index: 999 !important;
 }
+footer .email-block {
+    display: flex;
+}
+footer .email-block a {
+    margin-left: 10px;
+}
+footer .email-block p {
+    font-family: Gilroy-Medium;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgb(145, 143, 143);;
+}
 footer a:hover {
-    color: #FFEC00;
+    color: #FFF57B;
 }
 .mobile_img_footer {
     display: none;
