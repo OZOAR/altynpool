@@ -163,13 +163,12 @@
     }
 
     .contact-us .img_full {
-        top: 510% !important;
-        width: 400px;
+        display: none !important;
+
     }
 
     .contact-us .img_circle {
-        top: 518% !important;
-        width: 150px;
+        display: none !important;
     }
 }
 

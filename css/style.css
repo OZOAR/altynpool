@@ -818,6 +818,17 @@ footer p {
     position: relative;
     z-index: 999 !important;
 }
+footer .footer-description {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+footer .navbar-brand {
+    font-family: Gilroy-Medium;
+    font-size: 22px;
+}
+footer .navbar-brand img {
+    margin-right: 14px;
+}
 footer a {
     font-family: Gilroy-Regular;
     font-size: 14px;
