@@ -468,7 +468,7 @@ width: 100%;
 }
 .about-us .text-block {
     font-family: Gilroy-Medium;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
 }
 .about-us .text-block button {
@@ -529,7 +529,7 @@ width: 100%;
 }
 .why-us .card-content {
     font-family: Gilroy-Medium;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     padding-top: 26px;
 }
@@ -579,7 +579,7 @@ width: 100%;
 }
 .our-services .card-content {
     font-family: Gilroy-Medium;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     padding-top: 26px;
     text-align: left;
@@ -810,7 +810,7 @@ footer .menu-header {
     font-family: Gilroy-SemiBold;
     font-size: 14px;
     letter-spacing: 0.08em;
-    color: #FFEC00;
+    color: rgb(145, 143, 143);
 }
 footer .column-two {
     padding-top: 22px;
@@ -854,8 +854,8 @@ footer .email-block a {
 footer .email-block p {
     font-family: Gilroy-Medium;
     letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgb(145, 143, 143);;
+    /* text-transform: uppercase; */
+    color: #fff;
 }
 footer a:hover {
     color: #FFF57B;
