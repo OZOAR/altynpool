@@ -823,8 +823,20 @@ footer p {
     position: relative;
     z-index: 999 !important;
 }
+footer .first-footer-nav {
+    min-width: 100px;
+    max-width: 200px;
+}
+
+footer .second-footer-nav {
+    min-width: 100px;
+    max-width: 200px;
+}
+
 footer .footer-description {
     margin-top: 20px;
+    font-family: Gilroy-Regular;
+    line-height: 25px;
     margin-left: 5px;
 }
 footer .navbar-brand {

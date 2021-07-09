@@ -469,9 +469,9 @@
     footer .row>* {
         width: auto;
     }
-    footer .second-footer-nav {
+    footer .third-footer-nav .menu-header {
         /* float: right !important; */
-        margin-left: 110px;
+        padding-top: 20px;
     }
     .mobile_img_footer {
         display: block !important;
