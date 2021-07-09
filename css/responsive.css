@@ -161,7 +161,18 @@
         margin-left: 60px;
         padding: 0 !important;
     }
+
+    .contact-us .img_full {
+        top: 510% !important;
+        width: 400px;
+    }
+
+    .contact-us .img_circle {
+        top: 518% !important;
+        width: 150px;
+    }
 }
+
 @media (min-width: 350px) and (max-width:600px){
     .language-btn-m {
         font-family: Gilroy-Medium;

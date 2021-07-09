@@ -380,8 +380,15 @@ header .slidenav-menu {
 .slidenav-head {
     display: none;
 }
+section .main-section {
+    background-color: #111;
+    width: 100%;
+}
 .main-block {
     background-color: #111;
+    max-width: 1650px;
+    width: 100%;
+    margin: 0 auto;
     height: 720px;
     z-index: 1;
 }
@@ -417,7 +424,7 @@ header .slidenav-menu {
     color: #fff;
     /* display: inline-block; */
     white-space: nowrap;
-    margin-top: 30%;
+    margin-top: 155px;
 }
 .yellow-button {
     position: relative;
@@ -441,9 +448,16 @@ header .slidenav-menu {
     background-color: #FFF57B;
     border: 1px solid #FFF57B;
 }
+.about-us-section {
+    background-color: #fff !important;
+    width: 100%;
+}
 .about-us {
+    max-width: 1650px;
+width: 100%;
+    margin: 0 auto;
     background-color: #fff;
-    padding: 8% 5% 8% 5%;
+    padding: 4% 5% 4% 5%;
     z-index: 3;
 }
 .about-us h2 {
@@ -481,9 +495,16 @@ header .slidenav-menu {
     border: 2px solid #fff;
     color: #fff;
 }
-.why-us {
+.why-us-section {
+    width: 100%;
     background-color: #fff;
-    padding: 2% 5% 5% 5%;
+}
+.why-us {
+    max-width: 1650px;
+width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2% 5% 2% 5%;
 }
 .why-us h2 {
     font-size: 62px;
@@ -498,6 +519,7 @@ header .slidenav-menu {
 .why-us .text-card {
     width: 100%;
     background-color: #fff;
+    z-index: 5;
     
 }
 .why-us .card-content {
@@ -525,7 +547,16 @@ header .slidenav-menu {
 .why-us .row {
     padding-bottom: 5%;
 }
+
+.our-services-section {
+    background-color: #fff;
+    width:  100%;
+}
+
 .our-services {
+    max-width: 1650px;
+width: 100%;
+    margin: 0 auto;
     background-color: #fff;
     padding: 2% 5% 3% 5%;
 }
@@ -579,10 +610,15 @@ header .slidenav-menu {
 .our-services .row {
     padding-bottom: 5%;
 }
-
+.contact-us-section {
+    width: 100%;
+    background-color: #111;
+}
 .contact-us {
     background-color: #111;
-    /* height: 720px; */
+    max-width: 1650px;
+width: 100%;
+    margin: 0 auto;
     z-index: 1;
     padding: 10% 5% 10% 5%;
 }
@@ -753,9 +789,16 @@ select:-moz-focusring {
     background-color: #FFF57B;
     border: 1px solid #FFF57B;
 }
+.footer-section {
+    background-color: #111;
+    width: 100%;
+}
 footer {
     background: #111;
     padding: 1% 5% 2% 5%;
+    max-width: 1650px;
+width: 100%;
+    margin: 0 auto;
 }
 footer p {
     font-family: Gilroy-Regular;
