@@ -423,7 +423,7 @@ section .main-section {
     line-height: 73px;
     color: #fff;
     /* display: inline-block; */
-    white-space: nowrap;
+    white-space: pre-line;
     margin-top: 155px;
 }
 .yellow-button {
