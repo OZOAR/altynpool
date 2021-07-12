@@ -391,7 +391,7 @@
         font-size: 12px !important;
         line-height: 14px !important;
         min-height: 100px !important;
-        max-height: 100px !important;
+        max-height: 120px !important;
     }
     .why-us h2 {
         font-size: 24px !important;
@@ -406,7 +406,7 @@
         font-size: 12px !important;
         line-height: 14px !important;
         min-height: 60px !important;
-        max-height: 60px !important;
+        max-height: 120px !important;
     }
     .contact-us h2 {
         font-size: 24px !important;

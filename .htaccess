@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.altynpool\.com$ [NC]
+RewriteRule ^(.*)$ http://altynpool.com/$1 [R=301,L]
+
+RewriteCond %{SERVER_PORT} ^80$ [OR]
+RewriteCond %{HTTP} =on
+RewriteRule ^(.*)$ https://altynpool.com/$1 [R=301,L]
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_geoip.c>
+            GeoIPEnable On
+            RewriteCond %{ENV:GEOIP_COUNTRY_CODE} !^RU$
+            RewriteRule ^(.*)$ https://altynpool/ru/$1 [L]
+</IfModule>
