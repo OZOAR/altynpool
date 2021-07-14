@@ -1,15 +1,4 @@
 
-@media (min-width: 280px) and (max-width:349px){
-    .navbar {
-        display: none !important;
-    }
-    header .mobile-nav {
-        display: inline-block;
-    }
-    .slidenav-menu {
-        display: block !important;
-    }
-}
 @media (min-width: 600px) and (max-width:1000px){
     .language-btn-m {
         font-family: Gilroy-Medium;
@@ -172,7 +161,7 @@
     }
 }
 
-@media (min-width: 350px) and (max-width:600px){
+@media (min-width: 250px) and (max-width:600px){
     .language-btn-m {
         font-family: Gilroy-Medium;
         font-size: 16px;
@@ -440,6 +429,7 @@
     .contact-us .yellow-button {
         height: 47px !important;
         font-size: 12px !important;
+        width: 190px !important;
         line-height: 15px !important;
         font-family: Gilroy-Bold !important;
         margin-top: 50px !important;

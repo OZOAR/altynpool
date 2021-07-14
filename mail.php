@@ -9,7 +9,6 @@ if ( $method === 'POST' ) {
 	$project_name = trim($_POST["project_name"]);
 	$admin_email  = trim($_POST["admin_email"]);
 	$form_subject = trim($_POST["form_subject"]);
-
 	foreach ( $_POST as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
 			$message .= "
@@ -18,6 +17,7 @@ if ( $method === 'POST' ) {
 				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
 			</tr>
 			";
+			$msg_tg .= "<b>".$key."</b>".' - '. $value."\n";
 		}
 	}
 } else if ( $method === 'GET' ) {
@@ -34,7 +34,8 @@ if ( $method === 'POST' ) {
 				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
 			</tr>
 			";
-		}
+			$msg_tg .= "<b>".$key."</b>".' - '. $value."\n";
+		}	
 	}
 }
 
@@ -50,3 +51,12 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers );
+
+$apiToken = "1888867164:AAGFhJ9UTMyHdmEnlIBp8TDPagE9F8UtcVU";
+$data = [
+	'chat_id' => '-1001566133686', 
+	'text' => $msg_tg,
+	'parse_mode' => 'HTML'
+	// 'disable_web_page_preview' => true	
+];
+$response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );    
